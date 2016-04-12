@@ -31,7 +31,6 @@ $(document).ready(function() {
     ----------------------*/ 
     
     $('.subaction').popup();
-    $('#plan1_name').popup();
-    $('#plan2_name').popup();
+    $('.row_name').popup();
 });
 

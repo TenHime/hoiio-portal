@@ -72,7 +72,7 @@
 }
 
 .ui.subscription.segment{
-    padding-top:3px!important;
+    padding-top:6px!important;
     vertical-align:middle!important}
 
 .ui.subscription.segment >.ui.list > .staff.item a {
@@ -112,6 +112,8 @@ ui.subscription.segment >.ui.list > .staff.item a:hover {
 .ui.subscription.segment >.ui.list{
     margin-top:0!important;}
 
+
+.ui.popup{margin-left: -0.55em!important;}
 /*---------------------*/
 
 /*Duplicate from fullpage.css*/
