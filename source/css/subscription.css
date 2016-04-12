@@ -71,7 +71,9 @@
     padding-bottom:30px  !important;
 }
 
-.ui.subscription.segment{padding-top:3px!important;}
+.ui.subscription.segment{
+    padding-top:3px!important;
+    vertical-align:middle!important}
 
 .ui.subscription.segment >.ui.list > .staff.item a {
     color:#1b1c1d!important;
@@ -91,14 +93,19 @@ ui.subscription.segment >.ui.list > .staff.item a:hover {
     margin-right: 0.8em!important;
 }
 
+.ui.subscription.segment >.ui.list > .staff.item>.info.content{float: right; margin-top: 3px;}
+
+.ui.subscription.segment >.ui.list > .staff.item>.info.content span {font-size: 0.8571em!important;}
+
 .ui.subscription.segment >.ui.list > .staff.item>.right.floated.content .date {font-size: 0.8571em!important;}
 
-.ui.subscription.segment >.ui.list > .staff.item>.right.floated.content .icon {
+.ui.subscription.segment >.ui.list > .staff.item>.info.content .icon {
     font-size: 1.3em!important;
     color:#cccccc !important;
+    margin-left: 3px;
 }
 
-.ui.subscription.segment >.ui.list > .staff.item>.right.floated.content .icon:hover {
+.ui.subscription.segment >.ui.list > .staff.item>.info.content .icon:hover {
     color:#555555 !important;
 }
 
