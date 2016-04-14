@@ -14,6 +14,13 @@ $(document).ready(function() {
     ;
      });
     
+    $('#activities').click(function(){
+        $('.ui.sidebar')
+            .sidebar('setting', 'transition', 'overlay')
+            .sidebar('toggle')
+    ;
+     });
+    
     /*--------------------
         HOVER ON TABLE
     ----------------------*/ 

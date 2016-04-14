@@ -56,6 +56,8 @@
 }
 
 /*For subscription sidebar*/
+
+
 .ui.segments >.ui.horizontal.staff.segments > .ui.segment> .app .ui.avatar.image {
     border-radius: 0!important;
     width: 2.286rem !important;
@@ -73,7 +75,8 @@
 
 .ui.subscription.segment{
     padding-top:6px!important;
-    vertical-align:middle!important}
+    vertical-align:middle!important;
+    padding-right: 30px!important;}
 
 .ui.subscription.segment >.ui.list > .staff.item a {
     color:#1b1c1d!important;
@@ -95,7 +98,11 @@ ui.subscription.segment >.ui.list > .staff.item a:hover {
 
 .ui.subscription.segment >.ui.list > .staff.item>.info.content{float: right; margin-top: 3px;}
 
-.ui.subscription.segment >.ui.list > .staff.item>.info.content span {font-size: 0.8571em!important;}
+.ui.subscription.segment >.ui.list > .staff.item>.info.content span {
+    font-size: 0.8571em!important;
+    color:#767676 !important;
+    font-weight: 300;
+}
 
 .ui.subscription.segment >.ui.list > .staff.item>.right.floated.content .date {font-size: 0.8571em!important;}
 
@@ -250,17 +257,14 @@ ui.subscription.segment >.ui.list > .staff.item a:hover {
 }
 .subscription.segment{
     padding-left: 40px !important;
-    padding-right: 40px !important;
-    
+    padding-right: 40px !important;   
     padding-top: 35px !important;
     padding-bottom: 20px  !important;
 }
 
-.subscription.segment{
-    
-}
 
 
+.subscription.segment>.ui.list{padding-bottom:0!important;}
 
 .staff.segments > .segment{
     padding: 0;
