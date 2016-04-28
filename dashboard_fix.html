@@ -19,7 +19,7 @@
     <script src="source/js/modernizr.js"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="source/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="source/css/dashboard_fix.css">
     
     
 </head>
@@ -34,9 +34,9 @@
                     <div class="ui segment">
                         <div class="ui header segment">
                              Subscription detail
-                            <i class="close icon"></i>
+                            <i class="remove icon"></i>
                         </div>
-                        <div class="ui subscription segment">
+                        <div class="ui sidecontent segment">
                             <div class="ui middle aligned list">
                                 <div class="item">
                                    <div class="right floated info content">
@@ -46,10 +46,10 @@
                                     <div class="content">Steve Van has removed Toan Ho from Hoiio Pte Ltd.</div>
                                </div>
                                <div class="item">
-                                   <div class="right floated info content">
+                                   <div class="info content">
                                        Jun 20, 2016
                                    </div>
-                                       <img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/app_1.png">
+                                   <img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/app_1.png">
                                    <div class="content">Call Recording (+683000111) has been renewed for 1 month.</div>
                                </div>
                                 <div class="item">
@@ -90,8 +90,8 @@
                                 <div class="item">
                                    <div class="right floated info content">
                                        Jun 20, 2016
-                                   </div>
-                                       <img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/app_5.png">
+                                   </div>  
+                                    <img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/app_5.png">
                                     <div class="content">Direct Line (+442033933898) is expiring in 3 days.</div>
                                </div>
                                 <div class="item">
@@ -107,6 +107,7 @@
                 </div>
                 
                 <!--Actual content-->
+                
                 <div class="ui app menu">
                     <div class="menu item">
                         <button class="ui icon button">
@@ -126,17 +127,17 @@
                     <div class="ui stackable grid">
                         <div class="five wide column">
                             <div class="ui card">
-                                <div class="content">
-                                    <div class="ui middle aligned header">
-                                        <span class="left floated segment">Company Information</span>
-                                        <button class="ui right floated icon button">
-                                            <i class="setting icon"></i>
-                                        </button>
+                                <div class="ui header segment">  
+                                    <div class="ui middle aligned grid">
+                                            <div class="eleven wide column">Company Information</div>
+                                            <div class="right aligned five wide column">
+                                                <button class="ui icon button">
+                                                    <i class="icon cart"></i>
+                                                </button>
+                                            </div>
                                     </div>
                                 </div>
-                                    <div class="image">
-                                        <img class="ui image" src="../source/img/illustration.png">
-                                    </div>
+                                <img src="source/img/illustration.png">
                                 <div class="content">
                                    <div class="ui middle aligned list">
                                     <div class="item">
@@ -177,44 +178,48 @@
                         </div>
                         <div class="five wide column">
                             <div class="ui card">
-                                <div class="content">
-                                    <div class="ui middle aligned header">
-                                        Credits
-                                        <button class="ui right floated icon button">
-                                            <i class="setting icon"></i>
-                                        </button>
+                                <div class="ui header segment">
+                                    <div class="ui middle aligned grid">
+                                            <div class="eleven wide column">Credits</div>
+                                            <div class="right aligned five wide column">
+                                                <button class="ui icon button">
+                                                    <i class="icon cart"></i>
+                                                </button>
+                                            </div>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="ui credit segment">43.50<sup>SGD</sup></div>
+                                <div class="credit content">
+                                    43.50<sup>SGD</sup>
                                 </div>
                             </div>
                             <div class="ui card">
-                                <div class="content">
-                                    <div class="ui middle aligned header">
-                                        Subscriptions
-                                        <button class="ui right floated icon button">
-                                            <i class="setting icon"></i>
-                                        </button>
+                                <div class="ui header segment">
+                                    <div class="ui middle aligned grid">
+                                            <div class="eleven wide column">Subscriptions</div>
+                                            <div class="right aligned five wide column">
+                                                <button class="ui icon button">
+                                                    <i class="icon cart"></i>
+                                                </button>
+                                            </div>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="ui credit segment">
-                                        <div class="ui middle aligned grid">
-                                            <div class="left floated ten wide column">43.50<sup>SGD</sup></div>
-                                            <div class="right aligned right floated six wide column">
-                                                <i class="remove icon"></i>15%<br/>
-                                                <span class="statistic description">last month</span>
-                                            </div>
+                                <div class="credit content">
+                                    <div class="ui middle aligned grid">
+                                        <div class="eleven wide column">43.50<sup>SGD</sup></div>
+                                        <div class="right aligned five wide column">
+                                            <i class="remove icon"></i>15%<br/>
+                                            <span class="statistic description">last month</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="ui card">
-                                <div class="content">
-                                    <div class="ui middle aligned header">
-                                        Subscribed apps
-                                        <span class="right floated app_number">08</span>
+                                <div class="ui with_text header segment">
+                                    <div class="ui middle aligned grid">
+                                        <div class="eleven wide column">Subscribed apps</div>
+                                        <div class="right aligned five wide column">
+                                            <span class="right floated app_number">08</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content">
@@ -244,21 +249,22 @@
                                             <img class="ui mini radius img" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/app_9.png">
                                         </div>
                                     </div>
+                                    <a><i class="cart icon"></i>Go to Hoiio Store</a>
                                 </div>
                             </div>
                         </div>
-                        <div id="activities" class="six wide column">
+                        <div class="six wide column">
                             <div class="ui card">
-                                <div class="content">
-                                    <div class="ui middle aligned header">
-                                        Recent Activities
-                                        <button class="ui right floated icon button">
-                                            <i class="setting icon"></i>
-                                        </button>
+                             <div class="ui with_text header segment">
+                                <div class="ui middle aligned grid">
+                                    <div class="ten wide column">Recent Activities</div>
+                                    <div class="right aligned six wide column">
+                                        <a id="activities">View all</a>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="ui activities list">
+                             </div>
+                                 <div class="longest content">
+                                     <div class="ui activities list">
                                         <div class="top aligned item">
                                             <div class="right floated right aligned content"><img class="ui avatar image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/source/img/ava_2.jpg"></div>
                                             <div class="content">
@@ -295,15 +301,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>             
+                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+     
     <!-- Semantic Script -->
     <script src="source/css/semantic.js"></script>
     
